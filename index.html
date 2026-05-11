@@ -38,6 +38,8 @@
   @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.3;} }
   .hero-name { font-family: 'Orbitron',monospace; font-size: clamp(2.5rem,6vw,5rem); font-weight: 900; color: #fff; line-height: 1.1; margin-bottom: 0.4rem; text-shadow: 0 0 40px rgba(0,255,65,0.25); }
   .hero-name .accent { color: var(--green); }
+  .hero-fullname { font-family: 'Inter', sans-serif; font-size: clamp(1rem,2.2vw,1.35rem); font-weight: 400; color: var(--muted); letter-spacing: 0.28em; text-transform: uppercase; margin-bottom: 1.1rem; }
+  .hero-fullname .fn-accent { color: var(--text); font-weight: 600; }
   .hero-typewriter { font-size: clamp(1rem,2vw,1.2rem); color: var(--green); height: 1.8em; margin-bottom: 1rem; font-family: 'JetBrains Mono',monospace; }
   .type-cursor { animation: blink 1s infinite; }
   @keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0;} }
@@ -196,6 +198,7 @@
   <div class="hero-content">
     <div class="hero-status"><div class="status-dot-a"></div>CYBERSECURITY STUDENT · 8 MONTHS IN</div>
     <h1 class="hero-name glitch"><span class="accent">0x</span>YOUNES</h1>
+    <p class="hero-fullname"><span class="fn-accent">Younes Abennad</span></p>
     <p class="hero-typewriter" id="typewriter"><span class="type-cursor">_</span></p>
     <p class="hero-subtitle">
       Passionate about cybersecurity and building real skills through<br>
@@ -222,6 +225,7 @@
         <p><span class="tp">$ </span><span class="tc">cat about.txt</span></p><br>
         <p class="tm"># Cybersecurity student on a mission.</p><br>
         <p class="to">Handle  : <span style="color:var(--green);">0xyounes</span></p>
+        <p class="to">Name    : <span style="color:var(--text);font-weight:600;">Younes Abennad</span></p>
         <p class="to">Program : ALX Cybersecurity (8 months)</p>
         <p class="to">Focus   : Ethical Hacking & Security</p><br>
         <p class="to">Currently learning through the ALX program,</p>
@@ -332,14 +336,22 @@
   <p class="section-label">Hands-on Work</p>
   <h2 class="section-title">Labs & Projects</h2>
   <div class="projects-grid fade-in">
-    <div class="project-card">
-      <div class="project-header"><span class="project-num">// 001</span><span class="project-type type-alx">ALX PROJECT</span></div>
+    <div class="project-card" style="border-color:rgba(0,229,255,0.3);">
+      <div class="project-header"><span class="project-num">// 001</span><span class="project-type type-alx">ALX · PROFESSIONAL FOUNDATION</span></div>
       <div class="project-body">
-        <h3 class="project-title">ALX Team Security Project</h3>
-        <p class="project-desc">Collaborative security project with peers inside the ALX Cybersecurity program. Working as a team to research, analyze, and present findings on real-world security topics. Still in progress.</p>
-        <div class="project-tags"><span class="proj-tag">Team Work</span><span class="proj-tag">Security Research</span><span class="proj-tag">ALX Program</span></div>
+        <h3 class="project-title">Closing Morocco's Graduation to Employment Gap</h3>
+        <p class="project-desc">Team research project from the ALX Professional Foundation program (first 3 months). We analyzed the structural gap between university graduation and employment in Morocco — identifying root causes, interviewing stakeholders, and proposing actionable solutions. Presented as a full deck and recorded demo.</p>
+        <div style="margin:0.9rem 0 0.7rem;padding:0.75rem 1rem;background:rgba(0,229,255,0.05);border:1px solid rgba(0,229,255,0.15);border-radius:3px;">
+          <div style="font-size:0.65rem;color:var(--cyan);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:0.5rem;font-family:'JetBrains Mono',monospace;">// Team</div>
+          <p style="font-size:0.82rem;color:var(--text);line-height:1.8;font-family:'JetBrains Mono',monospace;">Younes Abennad &nbsp;·&nbsp; Zineb Sadir<br>Wail Rhazouani &nbsp;·&nbsp; Salma Bourdi</p>
+        </div>
+        <div class="project-tags"><span class="proj-tag">Research</span><span class="proj-tag">Data Analysis</span><span class="proj-tag">Presentation</span><span class="proj-tag">Team Work</span><span class="proj-tag">Morocco</span><span class="proj-tag">ALX Pro Foundation</span></div>
       </div>
-      <div class="project-footer"><span class="wip">⟳ IN PROGRESS</span><span style="font-size:0.72rem;color:var(--muted);">2025</span></div>
+      <div class="project-footer" style="gap:0.6rem;flex-wrap:wrap;">
+        <a href="https://youtu.be/1UVudFblDCU" class="proj-link" target="_blank" style="display:inline-flex;align-items:center;gap:0.35rem;">▶ Watch Demo</a>
+        <a href="https://docs.google.com/presentation/d/15qpI1l8DgpzFjOaj4ubVf2BtOoXPmcxU/edit?usp=sharing" class="proj-link" target="_blank" style="display:inline-flex;align-items:center;gap:0.35rem;color:var(--cyan);">📊 View Slides</a>
+        <span style="font-size:0.72rem;color:var(--muted);margin-left:auto;">2025</span>
+      </div>
     </div>
     <div class="project-card">
       <div class="project-header"><span class="project-num">// 002</span><span class="project-type type-lab">HOME LAB</span></div>
